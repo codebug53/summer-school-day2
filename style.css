@@ -1,1 +1,38 @@
-s
+.profile.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+    background: #fff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.profile-image {
+    order: 2;
+    margin-left: 0;
+    margin-right: 0;
+    /* Keeps the image on the right */
+}
+
+.profile-details {
+    flex: 1;
+    order: 1;
+}
+
+@media (max-width: 700px) {
+    .profile.card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .profile-details {
+        order: 2;
+    }
+}
