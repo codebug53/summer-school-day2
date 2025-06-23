@@ -1,37 +1,29 @@
-#!/bin/bash
+## 🖍️ CSS Types Overview
 
-echo ""
-echo "1. Inline CSS"
-echo "Where:"
-echo "In your index.html file, you used inline CSS on the <body> tag."
-echo ""
-echo "How:"
-echo "The style attribute is added directly to the HTML element."
-echo "This applies the background color only to this specific <body> element."
-echo "Inline CSS is useful for quick, one-off styles that don’t need to be reused."
-echo ""
+### 1. Inline CSS
 
-echo "2. Internal CSS"
-echo "Where:"
-echo "In your index.html file, inside the <head> section, you have a <style> block."
-echo ""
-echo "How:"
-echo "Internal CSS is written inside a <style> tag in the HTML <head>."
-echo "It applies styles to the whole document and is useful for page-specific styles."
-echo ""
+**Where:**  
+In your `index.html` file, you used inline CSS on the `<body>` tag.
 
-echo "3. External CSS"
-echo "Where:"
-echo "In your index.html file, you link to an external CSS file in the <head>."
-echo ""
-echo "How:"
-echo "External CSS is written in a separate file (style.css)."
-echo "You link this file to your HTML using the <link> tag."
-echo "Best for reusable styles and keeping HTML clean."
-echo ""
+**How:**  
+The `style` attribute is added directly to the HTML element. This applies the background color only to this specific `<body>` element. Inline CSS is useful for quick, one-off styles that don’t need to be reused.
 
-echo "Summary Table:"
-printf "%-10s %-25s %-50s\n" "Type" "Where in Code" "How it’s Used/Example"
-printf "%-10s %-25s %-50s\n" "Inline" "<body style=\"...\">" "Directly on an element using the style attribute"
-printf "%-10s %-25s %-50s\n" "Internal" "<style> ... </style>" "In the <head>, for page-specific styles"
-printf "%-10s %-25s %-50s\n" "External" "<link rel=\"stylesheet\"...>" "Separate .css file, linked in the <head>"
+---
+
+### 2. Internal CSS
+
+**Where:**  
+In your `index.html` file, inside the `<head>` section, you have a `<style>` block.
+
+**How:**  
+Internal CSS is written inside a `<style>` tag in the HTML `<head>`. It applies styles to the whole document and is useful for page-specific styles that don’t need to be shared across multiple pages.
+
+---
+
+### 3. External CSS
+
+**Where:**  
+In your `index.html` file, you link to an external CSS file in the `<head>`:
+
+```html
+<link rel="stylesheet" href="style.css">
